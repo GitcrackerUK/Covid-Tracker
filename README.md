@@ -17,5 +17,5 @@ Application for informational purpose with data related to Covid-19. It is react
   * jsconfig.json </s>
 * create list of details and data displayed in app
 * create in figma structure of the app
-* find free Covid data API
+*<s>find free Covid data API</s>
 * consider implementation of library nivo
