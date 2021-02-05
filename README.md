@@ -14,6 +14,7 @@ Application for information purpose with data related to Covid-19. It is react a
      * factory.js
      * store.js
      * styled.js
+  * jsconfig.json
 * create list of details and data displayed in app
 * create structure of app
 * find free Covid data API
