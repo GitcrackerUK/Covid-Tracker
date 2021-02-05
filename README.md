@@ -14,3 +14,5 @@ Aplication for information purpuse with data related to Covid-19
   * styled.js
 * create list of details and data displayed in app
 * create structure of app
+* find free Covid data API
+* concider implementation of library nivo
