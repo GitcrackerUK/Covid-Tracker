@@ -4,7 +4,7 @@ Application for information purpose with data related to Covid-19. It is react a
 #### To-do
 * <s>creat app with create-react-app</s>
 * <s>create gcp app instance</s>
-* add jsconfig with base folder src
+* <s>add jsconfig with base folder src</s>
 * create base directory with:
   * components
   * public
