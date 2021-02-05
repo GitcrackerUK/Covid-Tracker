@@ -10,7 +10,7 @@ Application for information purpose with data related to Covid-19. It is react a
   * src
     * components
     * img
-     * index.js
+      * index.js
     * factory.js
     * store.js
     * styled.js
