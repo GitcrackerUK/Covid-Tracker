@@ -1,5 +1,5 @@
 #### Covid-Tracker
-Aplication for information purpuse with data related to Covid-19. It is react application created with create-react-app and styled with styled components.
+Aplication for information purpuse with data related to Covid-19. It is react application created with create-react-app and styled with styled-components.
 
 #### To-do
 * creat app with create-react-app
