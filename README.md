@@ -1,11 +1,10 @@
 #### Covid-Tracker
 Aplication for information purpuse with data related to Covid-19
 
-
 #### To-do
-* Creat app with create-react-app
-* Add jsconfig with base folder src
-* Create base directory with:
+* creat app with create-react-app
+* add jsconfig with base folder src
+* create base directory with:
   * components
   * public
   * img
@@ -13,6 +12,5 @@ Aplication for information purpuse with data related to Covid-19
   * factory.js
   * store.js
   * styled.js
-  
-* Create list of details and data displayed in app
-* Create structure of app
+* create list of details and data displayed in app
+* create structure of app
