@@ -6,13 +6,14 @@ Application for information purpose with data related to Covid-19. It is react a
 * <s>create gcp app instance</s>
 * <s>add jsconfig with base folder src</s>
 * create base directory with:
-  * components
   * public
-  * img
-    * index.js
-  * factory.js
-  * store.js
-  * styled.js
+  * src
+    * components
+    * img
+     * index.js
+     * factory.js
+     * store.js
+     * styled.js
 * create list of details and data displayed in app
 * create structure of app
 * find free Covid data API
