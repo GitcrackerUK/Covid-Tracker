@@ -20,6 +20,9 @@ Application for informational purpose with data related to Covid-19. It is react
     ├── index.js
     └── store.js
 ```
+#### Packages
+* styled-components
+* axios
 
 #### To-do
 * consider implementation of library nivo
