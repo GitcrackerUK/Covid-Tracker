@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { Cards, Charts, CountryPicker } from 'components';
 import { GlobalStyle, Container } from 'components/styled'
 import { API } from 'api/index'
+import {Header, Main,Footer} from 'components';
+
 
 
 
@@ -26,21 +28,13 @@ export default function App() {
       // getData()
     }, []
   )
-  function clg() {
-    console.log(res);
-    // res.data.Countries.map((country)=>{
-    //   console.log(country.Country);
-    // })
-    
-
-  }
+  
   return (
     <Container>
-      <button onClick={clg}> Click</button>
       <GlobalStyle></GlobalStyle>
-      <Cards ></Cards>
-      <Charts></Charts>
-      <CountryPicker component="Country Picker" ></CountryPicker>
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
     </Container>
   )
 }
