@@ -59,7 +59,6 @@ ${Background};
 width:1000px;
 margin:0px auto;
 padding:1px;
-height:100vh;
 @media(max-width:1000px){
   width:100%;
 }
