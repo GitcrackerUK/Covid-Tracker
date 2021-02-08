@@ -1,9 +1,16 @@
-import { countries, sum, countryStatusTotalRoute, countryDayOneRoute } from 'api/routes'
+import { CountryPicker, Global, Summary } from '../Main'
 import React, { useEffect, useState } from 'react';
 import { API } from 'api'
 import styled from 'styled-components';
 const Wrapper = styled.div`
-
+display:flex;
+height:1887px;
+`
+const LeftWrapper =styled.div`
+width:320px;
+`
+const RightWrapper = styled.div`
+width:715px;
 
 `
 export default function Main(props) {
@@ -23,10 +30,16 @@ export default function Main(props) {
             // getData()
         }, []
     )
-    
+
     return (
         <Wrapper props={props}>
-        <h1>Main</h1>
+            <LeftWrapper>
+                <CountryPicker></CountryPicker>
+            </LeftWrapper>
+            <RightWrapper>
+                <Global></Global>
+                <Summary></Summary>
+            </RightWrapper>
         </Wrapper>
     )
 }
