@@ -5,8 +5,11 @@ import {covidIcon} from 'img'
 
 
 export const Wrapper = styled(SvgLoader)`
-height:${p=>p.size}px;
-width:${p=>p.size}px;
+position:absolute;
+top:${p=>p.top}vw;
+right:${p=>p.right}vw;
+height:${p=>p.size}vw;
+width:${p=>p.size}vw;
 
 >path{
     /* fill:#fff; */

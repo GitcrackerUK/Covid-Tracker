@@ -22,9 +22,13 @@ width:80%;
 export default function Header() {
     return (
         <Wrapper>
-            <SectionHeader headerStyle >Covid-19 Data Explorer</SectionHeader>
+            <Covid size={3} top={1} right={6}></Covid>
+            <Covid size={1.2} top={11} right={16}></Covid>
+            <Covid size={2} top={-1} right={36}></Covid>
+            <Covid size={4} top={-1} right={80}></Covid>
+            <SectionHeader Large >Covid-19 Data Explorer</SectionHeader>
             <Image></Image>
-            {/* <Covid size={30}></Covid> */}
+           
         </Wrapper>
     )
 }
