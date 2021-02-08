@@ -7,10 +7,11 @@ const Wrapper = styled.div`
 
 
 
-export default function Summary(){
+export default function Summary(props){
+    console.log(props.data);
     return(
         <Wrapper>
-            <h1>summary</h1>
+            <h1>{props.data}</h1>
         </Wrapper>
     )
 }
