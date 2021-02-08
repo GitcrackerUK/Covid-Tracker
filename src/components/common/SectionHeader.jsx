@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionHeaders, h1Light, h1LightRES } from 'components/styled'
+import { SectionHeaders, h1Light, h1LightRES, h3Light, shadow6, shadow8, shadow12 } from 'components/styled'
 import styled, { css } from 'styled-components'
 
 const Wrapper = styled.div`
@@ -8,8 +8,9 @@ align-items:center;
 border-radius:3px;
 ${SectionHeaders};
 display:flex;
-${p => p.headerStyle ? css`
+${p => p.Large ? css`
     ${h1Light}
+    ${shadow8};
     width:269px;
     height:40px;
     position:absolute;
@@ -22,6 +23,12 @@ ${p => p.headerStyle ? css`
         height:4.5vw;
         ${h1LightRES}
     }
+`: css``}
+${p => p.Regular ? css`
+${shadow6};
+${h3Light};
+margin:5px auto 0px auto;
+width:80%;
 `: css``}
 `
 
