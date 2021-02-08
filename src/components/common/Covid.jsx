@@ -5,16 +5,16 @@ import {covidIcon} from 'img'
 
 
 export const Wrapper = styled(SvgLoader)`
-height:80px;
-width:80px;
+height:${p=>p.size}px;
+width:${p=>p.size}px;
 
 >path{
     /* fill:#fff; */
 }
 `
 
-export default function Covid(){
+export default function Covid(props){
     return(
-        <Wrapper path={covidIcon}></Wrapper>
+        <Wrapper {...props} path={covidIcon}></Wrapper>
     )
 }
