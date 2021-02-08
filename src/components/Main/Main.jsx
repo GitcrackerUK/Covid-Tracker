@@ -1,7 +1,7 @@
 import { CountryPicker, Global, Summary } from '../Main'
-import React, { useEffect, useState } from 'react';
-import { API } from 'api'
+import React, {useState } from 'react';
 import styled from 'styled-components';
+
 const Wrapper = styled.div`
 display:flex;
 height:1887px;
@@ -14,31 +14,19 @@ width:715px;
 
 `
 export default function Main(props) {
-    const [CountriesData, setCountriesData] = useState(["Countries"])
+   const [country,setCountry] = useState('UK')
 
-    useEffect(
-        () => {
-            // const getData = async () => {
-            //     try {
-            //         const {data}= await API(sum)
-            //         setCountriesData(data.Countries)
-            //     } catch (err) {
-            //         console.log(err);
-            //         return err
-            //     }
-            // }
-            // getData()
-        }, []
-    )
-
+    function handleClick(e){
+        setCountry(e.target.innerText);
+    }
     return (
         <Wrapper props={props}>
             <LeftWrapper>
-                <CountryPicker></CountryPicker>
+                <CountryPicker handleClick={handleClick}></CountryPicker>
             </LeftWrapper>
             <RightWrapper>
                 <Global></Global>
-                <Summary></Summary>
+                <Summary data={country}></Summary>
             </RightWrapper>
         </Wrapper>
     )
