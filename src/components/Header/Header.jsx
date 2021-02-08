@@ -1,7 +1,6 @@
 import SectionHeader from 'components/common/SectionHeader'
 import Covid from 'components/common/Covid.jsx'
 import styled from 'styled-components'
-
 import React from 'react'
 
 
