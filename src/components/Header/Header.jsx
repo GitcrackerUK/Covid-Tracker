@@ -17,7 +17,6 @@ export default function Header() {
     return (
         <Wrapper>
            <SectionHeader>Header</SectionHeader>
-           <SectionHeader>Header</SectionHeader>
            <Image></Image>
            <Covid></Covid>
 
