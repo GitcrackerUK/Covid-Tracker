@@ -14,7 +14,7 @@ const InnerWrapper =styled.div`
 margin:auto;
 ${GlobalBackground}
 ${shadow6}
-width:540px;
+width:593px;
 height:332px;
 border-radius:3px;
 padding:1px;
