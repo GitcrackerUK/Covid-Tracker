@@ -17,7 +17,7 @@ ${shadow6}
 margin:auto;
 width:80%;
 background-color:#fff;
-height:500px;
+height:700px;
 ::-webkit-scrollbar {
   width: 15px;
   height:50px;
@@ -66,9 +66,7 @@ export default function CountryPicker(props) {
         data()
     }, [])
     
-    function handleClick(e){
-        console.log(e.target);
-    }
+    
 
     return (
         <Wrapper>
@@ -76,8 +74,8 @@ export default function CountryPicker(props) {
             <InnerWrapper>
                 <SectionHeader Regular >Countries</SectionHeader>
                 <UL>
-                    {data.map((item) => {
-                        return <LI onClick={(e)=>props.handleClick(e)}>{item.country}</LI>
+                    {data.map((item,i) => {
+                        return <LI key={i} onClick={(e)=>props.handleClick(e,data)}>{item.country}</LI>
                     })}
                 </UL>
 
