@@ -1,7 +1,7 @@
 import {GlobalBackground,shadow6,GlobalMain,h1Regular} from 'components/styled'
 import {removeComa} from 'factory'
 import React,{useEffect,useState} from 'react'
-import CountUp, { useCountUp } from 'react-countup';
+import CountUp from 'react-countup';
 import GlobalTotal from 'store/total'
 import styled from 'styled-components'
 
@@ -11,6 +11,7 @@ width:100%;
 height:360px;
 `
 const InnerWrapper =styled.div`
+margin:auto;
 ${GlobalBackground}
 ${shadow6}
 width:540px;
