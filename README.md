@@ -1,6 +1,6 @@
 #### Covid-Tracker
 Application for informational purpose with data related to Covid-19. It is react application created with create-react-app and styled with styled-components.
-![Alt text](/home/pablo/Desktop/Projects/JavaScript/React/covid-app/src/img/demo.png?raw=true "Title")
+![Alt text](./src/img/demo.png?raw=true "Title")
 ##### Directory
 ```bash
 ├── gist.md
