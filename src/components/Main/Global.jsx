@@ -24,7 +24,7 @@ ${GlobalMain};
 ${shadow6}
 width:330px;
 height:252px;
-margin:40px auto 40px 40px;
+margin:40px auto 40px 60px;
 border-radius:3px;
 display:flex;
 justify-content:center;
