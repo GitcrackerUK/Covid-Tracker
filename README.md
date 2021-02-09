@@ -48,6 +48,8 @@ Application for informational purpose with data related to Covid-19. It is react
 #### Packages
 * styled-components
 * axios
+* nivo
+* react-countup
 
 #### To-do
 * create Global component
