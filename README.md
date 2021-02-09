@@ -3,22 +3,45 @@ Application for informational purpose with data related to Covid-19. It is react
 
 ##### Directory
 ```bash
-├── node_modules
+├── gist.md
+├── jsconfig.json
 ├── package.json
 ├── package-lock.json
 ├── public
 │   └── index.html
 ├── README.md
 └── src
-    ├── APIroutes.json
-    ├── App.js
+    ├── api
+    │   ├── Global.js
+    │   ├── routes.js
+    │   └── UK.js
+    ├── App.jsx
     ├── components
+    │   ├── common
+    │   │   ├── Covid.jsx
+    │   │   └── SectionHeader.jsx
+    │   ├── Footer
+    │   │   └── Footer.jsx
+    │   ├── Header
+    │   │   └── Header.jsx
+    │   ├── index.js
+    │   ├── Main
+    │   │   ├── CountryPicker.jsx
+    │   │   ├── Global.jsx
+    │   │   ├── index.js
+    │   │   ├── Main.jsx
+    │   │   └── Summary.jsx
     │   └── styled.js
     ├── factory.js
     ├── img
+    │   ├── covidIcon.svg
+    │   ├── covidMain.png
+    │   ├── graph.png
     │   └── index.js
     ├── index.js
-    └── store.js
+    └── store
+        ├── countries.json
+        └── total.json
 ```
 #### Packages
 * styled-components
