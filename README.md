@@ -50,7 +50,13 @@ Application for informational purpose with data related to Covid-19. It is react
 * axios
 
 #### To-do
+* create Global component
+* create Country Summary component
 * consider implementation of library nivo
+* <s> create header
+* create country picker
+* setup Api
+* save data from Api in store for production and fall back </s>
 * <s>create list of details and data displayed in app</s>
 * <s>create in figma structure of the app</s>
 * <s>creat app with create-react-app</s>
