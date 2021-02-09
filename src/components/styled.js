@@ -44,22 +44,7 @@ font-weight:400;
 `
 //--------------------------------------------------------------------------------------------------------------------------------------
 
-export const shadow6 = css`box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);`
+export const shadow6 = css`box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
+border-radius:3px;`
 export const shadow8 = css`box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);`
 export const shadow12 = css`box-shadow: 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);`
-export const GlobalStyle = createGlobalStyle`
-body{
-  margin:0px ;
-  padding:0px;
-  font-family: 'Lato', sans-serif;
-}
-`
-export const Container = styled.div`
-${Background};
-width:1000px;
-margin:0px auto;
-padding:1px;
-@media(max-width:1000px){
-  width:100%;
-}
-`
