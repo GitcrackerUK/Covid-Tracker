@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
 display:flex;
-height:1887px;
+height:1059px;
 `
 const LeftWrapper =styled.div`
 width:320px;
