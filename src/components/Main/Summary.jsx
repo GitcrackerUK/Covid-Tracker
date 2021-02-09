@@ -21,7 +21,7 @@ const CountrySummary = styled.div`
 display:flex;
 align-items:center;
 border-radius:3px;
-margin:17px auto;
+margin:5px auto;
 ${CountryData};
 ${shadow6};
 width:505px;
@@ -43,6 +43,7 @@ const Data = styled.div`
 text-align:center;`
 
 const ChartWrapper = styled.div`
+margin:5px;
 height:200px;
 
 `
