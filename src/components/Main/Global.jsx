@@ -1,6 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
 import {GlobalBackground,shadow6,GlobalMain,h1Regular} from 'components/styled'
+import {removeComa} from 'factory'
+import React,{useEffect,useState} from 'react'
+import CountUp, { useCountUp } from 'react-countup';
+import GlobalTotal from 'store/total'
+import styled from 'styled-components'
+
 
 const Wrapper = styled.div`
 width:100%;
@@ -59,6 +63,20 @@ text-align:center;
 `
 
 export default function Global(){
+    const [data , setData] = useState ({
+        totalCases:"",
+        totalDeaths:"",
+        totalRecovered:""
+    })
+    // const [loading,setLoading]=useState(false)
+    
+    useEffect(()=>{
+        const set = async ()=>{
+            const {totalCases,totalDeaths,totalRecovered} = await  GlobalTotal.result 
+            setData({totalCases:removeComa(totalCases),totalDeaths:removeComa(totalDeaths),totalRecovered:removeComa(totalRecovered)})
+        }   
+        set()
+    },[])
     return(
         <Wrapper>
             <InnerWrapper>
@@ -69,9 +87,9 @@ export default function Global(){
                             <Text>Global Total Deaths: </Text>
                         </Left>
                         <Right>
-                            <Data><Text>1.510.531</Text></Data>
-                            <Data><Text>1.510.531</Text></Data>
-                            <Data><Text>1.510.531</Text></Data>
+                            <Data><Text><CountUp  duration={3} useEasing={true} separator={","} end={data.totalCases}></CountUp></Text></Data>
+                            <Data><Text><CountUp duration={2} separator={","} end={data.totalRecovered}></CountUp></Text></Data>
+                            <Data><Text><CountUp  duration={1} separator={","} end={data.totalDeaths}></CountUp></Text></Data>
                         </Right>
                 </GlobalWrapper>
             </InnerWrapper>
