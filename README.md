@@ -46,11 +46,11 @@ Application for informational purpose with data related to Covid-19. It is react
 #### Packages
 * styled-components
 * axios
-* load-json-file
+
 #### To-do
 * consider implementation of library nivo
-* create list of details and data displayed in app
-* create in figma structure of the app
+* <s>create list of details and data displayed in app</s>
+* <s>create in figma structure of the app</s>
 * <s>creat app with create-react-app</s>
 * <s>create gcp app instance</s>
 * <s>add jsconfig with base folder src</s>
