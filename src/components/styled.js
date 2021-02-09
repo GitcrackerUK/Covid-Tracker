@@ -4,7 +4,7 @@ import styled, { createGlobalStyle, css } from 'styled-components';
 export const Background = css`background-color:#f1f3f4;`
 export const CountryData = css`background-color:#F1F3F4;`
 export const GlobalBackground = css`background-color:#CCF2F4;`
-export const GlobalMain = css`background-color:#79BAC1;`
+export const GlobalMain = css`background-color:#79BAC1; opacity:0.9;`
 export const SectionHeaders = css`background-color:#C7CED9;`
 export const Footer = css`background-color:#C7CED9;`
 //------------------
