@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionHeaders, h1Light, h1LightRES, h3Light, shadow6, shadow8, shadow12 } from 'components/styled'
+import { SectionHeaders, h1Light, h1LightRES, h3Light, shadow6, shadow8} from 'components/styled'
 import styled, { css } from 'styled-components'
 
 const Wrapper = styled.div`
