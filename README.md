@@ -15,7 +15,6 @@ Application for informational purpose with data related to Covid-19. It is react
 └── src
     ├── api
     │   ├── Global.js
-    │   ├── routes.js
     │   └── UK.js
     ├── App.jsx
     ├── components
@@ -28,6 +27,8 @@ Application for informational purpose with data related to Covid-19. It is react
     │   │   └── Header.jsx
     │   ├── index.js
     │   ├── Main
+    │   │   ├── Chart
+    │   │   │   └── Chart.jsx
     │   │   ├── CountryPicker.jsx
     │   │   ├── Global.jsx
     │   │   ├── index.js
@@ -38,6 +39,7 @@ Application for informational purpose with data related to Covid-19. It is react
     ├── img
     │   ├── covidIcon.svg
     │   ├── covidMain.png
+    │   ├── demo.png
     │   ├── graph.png
     │   └── index.js
     ├── index.js
@@ -57,6 +59,7 @@ Application for informational purpose with data related to Covid-19. It is react
 * implement live api with fall back to store in case of 404
 * create rwd for app
 * refactor directory
+* fix country picker scroll bug
 * <s>fix chart bug</s>
 * <s>create Global component
 * create Country Summary component
