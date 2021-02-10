@@ -5,14 +5,14 @@ export const Chart = ({ data }) => (
     <ResponsiveBar
     data={data}
     keys={[ 'active cases', 'new cases', 'new deaths' ]}
-    indexBy="country"
+    indexBy="id"
     margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
     padding={0}
     groupMode="grouped"
     layout="horizontal"
     valueScale={{ type: 'linear' }}
     indexScale={{ type: 'band', round: true }}
-    colors={{ scheme: 'nivo' }}
+    colors={{ scheme: 'accent' }}
     defs={[
         {
             id: 'dots',
