@@ -1,19 +1,14 @@
-import styled from 'styled-components'
 import { SvgLoader } from 'react-svgmt';
-import React from 'react'
+import styled from 'styled-components'
 import {covidIcon} from 'img'
-
+import React from 'react'
 
 export const Wrapper = styled(SvgLoader)`
-position:absolute;
-top:${p=>p.top}vw;
 right:${p=>p.right}vw;
 height:${p=>p.size}vw;
 width:${p=>p.size}vw;
-
->path{
-    /* fill:#fff; */
-}
+position:absolute;
+top:${p=>p.top}vw;
 `
 
 export default function Covid(props){

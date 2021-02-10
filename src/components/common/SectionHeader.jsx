@@ -1,6 +1,6 @@
-import React from 'react'
-import { SectionHeaders, h1Light, h1LightRES, h3Light, shadow6, shadow8} from 'components/styled'
+import { SectionHeaders, h1Light, h1LightRES, h3Light, shadow6} from 'components/styled'
 import styled, { css } from 'styled-components'
+import React from 'react'
 
 const Wrapper = styled.div`
 justify-content:center;
@@ -9,11 +9,11 @@ border-radius:3px;
 ${SectionHeaders};
 display:flex;
 ${p => p.Large ? css`
-    ${h1Light}
-    ${shadow8};
+    position:absolute;
     width:269px;
     height:40px;
-    position:absolute;
+    ${h1Light}
+    ${shadow6};
     top:40px;
     left:40px;
     @media(max-width:1000px){
@@ -24,18 +24,17 @@ ${p => p.Large ? css`
         ${h1LightRES}
     }
 `: css``}
+
 ${p => p.Regular ? css`
-${shadow6};
-${h3Light};
-margin:5px auto 0px auto;
-width:80%;
+    margin:5px auto 0px auto;
+    ${shadow6};
+    ${h3Light};
+    width:80%;
 `: css``}
 `
 
 export default function SectionHeader(props) {
     return (
-        <Wrapper {...props}>
-
-        </Wrapper>
+        <Wrapper {...props}></Wrapper>
     )
 }

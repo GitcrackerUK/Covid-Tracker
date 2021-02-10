@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from 'styled-components';
+import {css } from 'styled-components';
 
 //colors------------
 export const Background = css`background-color:#f1f3f4;`

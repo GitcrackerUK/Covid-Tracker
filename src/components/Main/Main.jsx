@@ -15,17 +15,16 @@ width:715px;
 `
 export default function Main(props) {
    const [country,setCountry] = useState({
-       activeCases: "+35,257",
-   country: "UK",
-   newCases: "+14,104",
-   newDeaths: "+333",
-   totalCases: "3,959,784",
-   totalDeaths: "112,798",
-   totalRecovered: "1,950,886"})
-
+        activeCases: "+35,257",
+        country: "UK",
+        newCases: "+14,104",
+        newDeaths: "+333",
+        totalCases: "3,959,784",
+        totalDeaths: "112,798",
+        totalRecovered: "1,950,886"
+    })
 
     function handleClick(e,data){
-        // setData(data)
         for(let item of data){
             if(item.country===e.target.innerText ){
                 setCountry(item);

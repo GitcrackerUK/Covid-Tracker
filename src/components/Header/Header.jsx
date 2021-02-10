@@ -1,6 +1,6 @@
 import SectionHeader from 'components/common/SectionHeader'
 import Covid from 'components/common/Covid.jsx'
-import styled,{css} from 'styled-components'
+import styled from 'styled-components'
 import { covidMain } from 'img'
 import React from 'react'
 

@@ -1,10 +1,9 @@
-import {CountryData,shadow6,h3Light,h3Regular,h2Regular,h2Light} from 'components/styled'
+import {CountryData,shadow6,h3Light,h2Regular} from 'components/styled'
 import SectionHeader from 'components/common/SectionHeader'
-import React,{useEffect,useState} from 'react'
-import CountUp from 'react-countup';
+import {getNumberNull,checkForData} from 'factory'
 import styled from 'styled-components'
 import {Chart} from './Chart/Chart'
-import {getNumberNull,checkForData} from 'factory'
+import React from 'react'
 
 const Wrapper = styled.div`
 ${shadow6};
@@ -13,10 +12,6 @@ background-color:#fff;
 width:593px;
 height:338px;
 `
-// const Chart = styled.div`
-// height:192px;
-// width:570px;
-// `
 const CountrySummary = styled.div`
 display:flex;
 align-items:center;
@@ -45,9 +40,7 @@ text-align:center;`
 const ChartWrapper = styled.div`
 margin:5px;
 height:200px;
-
 `
-
 
 export default function Summary(props){
     return(
@@ -55,7 +48,6 @@ export default function Summary(props){
             <SectionHeader Regular>
            {`Summary information for ${props.country?props.country:"UK"}`}
             </SectionHeader>
-
            <ChartWrapper>
            <Chart data={[
             {
@@ -66,10 +58,8 @@ export default function Summary(props){
             ]
            }></Chart>
            </ChartWrapper>
-
             <CountrySummary>
                 <Country>{checkForData(props.country)}
-                {/* {props.country?props.country:null} */}
                 </Country>
                 <CountDetail>
                     <Header>Total Cases</Header>
@@ -84,8 +74,6 @@ export default function Summary(props){
                     <Data>{checkForData(props.totalDeaths)}</Data>
                 </CountDetail>
             </CountrySummary>
-
-           
         </Wrapper>
     )
 }

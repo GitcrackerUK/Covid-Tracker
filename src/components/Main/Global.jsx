@@ -1,9 +1,9 @@
 import {GlobalBackground,shadow6,GlobalMain,h1Regular} from 'components/styled'
-import {removeComa} from 'factory'
 import React,{useEffect,useState} from 'react'
-import CountUp from 'react-countup';
-import GlobalTotal from 'store/total'
 import styled from 'styled-components'
+import GlobalTotal from 'store/total'
+import CountUp from 'react-countup';
+import {removeComa} from 'factory'
 
 
 const Wrapper = styled.div`
@@ -20,47 +20,45 @@ border-radius:3px;
 padding:1px;
 `
 const GlobalWrapper = styled.div`
-${GlobalMain};
-${shadow6}
-width:330px;
-height:252px;
 margin:40px auto 40px 60px;
-border-radius:3px;
-display:flex;
 justify-content:center;
 align-items:center;
 position:relative;
+display:flex;
+${GlobalMain};
+width:330px;
+height:252px;
+${shadow6}
 `
 
 const Left = styled.div`
+height:80%;
 display: flex;
 flex-direction:column;
 justify-content: space-between;
-height:80%;
 `
 const Text = styled.p`
 ${h1Regular};
 margin: 0px auto;
 `
 const Right = styled.div`
-display: flex;
-flex-direction:column;
-justify-content: space-between;
+left:280px;
 height:95%;
 width:197px;
+display: flex;
 position:absolute;
-left:280px;
+flex-direction:column;
+justify-content: space-between;
 `
 const Data = styled.div`
-border-radius:3px;
 ${shadow6};
 ${GlobalMain};
-display: flex;
 justify-content:center;
 align-items:center;
+text-align:center;
+display: flex;
 height:58px;
 width:100%;
-text-align:center;
 `
 
 export default function Global(){
@@ -68,9 +66,7 @@ export default function Global(){
         totalCases:"",
         totalDeaths:"",
         totalRecovered:""
-    })
-    // const [loading,setLoading]=useState(false)
-    
+    })    
     useEffect(()=>{
         const set = async ()=>{
             const {totalCases,totalDeaths,totalRecovered} = await  GlobalTotal.result 
@@ -83,14 +79,14 @@ export default function Global(){
             <InnerWrapper>
                 <GlobalWrapper>
                         <Left>
-                            <Text>Global Total Cases:</Text>
-                            <Text>Global Total recovered : </Text>
+                            <Text>Global Total Cases: </Text>
+                            <Text>Global Total recovered: </Text>
                             <Text>Global Total Deaths: </Text>
                         </Left>
                         <Right>
                             <Data><Text><CountUp  duration={3} useEasing={true} separator={","} end={data.totalCases}></CountUp></Text></Data>
-                            <Data><Text><CountUp duration={2} separator={","} end={data.totalRecovered}></CountUp></Text></Data>
-                            <Data><Text><CountUp  duration={1} separator={","} end={data.totalDeaths}></CountUp></Text></Data>
+                            <Data><Text><CountUp duration={2.5} useEasing={true} separator={","} end={data.totalRecovered}></CountUp></Text></Data>
+                            <Data><Text><CountUp  duration={2} useEasing={true} separator={","} end={data.totalDeaths}></CountUp></Text></Data>
                         </Right>
                 </GlobalWrapper>
             </InnerWrapper>
