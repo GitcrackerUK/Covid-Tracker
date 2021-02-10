@@ -52,9 +52,14 @@ Application for informational purpose with data related to Covid-19. It is react
 * react-countup
 
 #### To-do
-* create Global component
+* create footer
+* deploy to Gcloud
+* implement live api with fall back to store in case of 404
+* create rwd for app
+* <s>fix chart bug</s>
+* <s>create Global component
 * create Country Summary component
-* consider implementation of library nivo
+* consider implementation of library nivo</s>
 * <s> create header
 * create country picker
 * setup Api
