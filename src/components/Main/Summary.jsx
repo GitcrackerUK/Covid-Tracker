@@ -4,7 +4,7 @@ import React,{useEffect,useState} from 'react'
 import CountUp from 'react-countup';
 import styled from 'styled-components'
 import {Chart} from './Chart/Chart'
-import {removeComaPlus} from 'factory'
+import {getNumberNull,checkForData} from 'factory'
 
 const Wrapper = styled.div`
 ${shadow6};
@@ -59,32 +59,29 @@ export default function Summary(props){
            <ChartWrapper>
            <Chart data={[
             {
-            "active cases": removeComaPlus(props.activeCases),
-            "active casesColor": "hsl(82, 70%, 50%)",
-            "new cases":  removeComaPlus(props.newCases),
-            "new casesColor": "hsl(41, 70%, 50%)",
-            "new deaths": removeComaPlus(props.newDeaths),
-            "new deathsColor": "hsl(238, 70%, 50%)",
+            "active cases": getNumberNull(props.activeCases),
+            "new cases":  getNumberNull(props.newCases),
+            "new deaths": getNumberNull(props.newDeaths),
             }
             ]
            }></Chart>
            </ChartWrapper>
 
             <CountrySummary>
-                <Country>
-                {props.country?props.country:null}
+                <Country>{checkForData(props.country)}
+                {/* {props.country?props.country:null} */}
                 </Country>
                 <CountDetail>
                     <Header>Total Cases</Header>
-                    <Data>{props.totalCases?props.totalCases:null}</Data>
+                    <Data>{checkForData(props.totalCases)}</Data>
                 </CountDetail>
                 <CountDetail>
                     <Header>Total recovered</Header>
-                    <Data>{props.totalRecovered?props.totalRecovered:null}</Data>
+                    <Data>{checkForData(props.totalRecovered)}</Data>
                 </CountDetail>
                 <CountDetail>
                     <Header>Total deaths</Header>
-                    <Data>{props.totalDeaths?props.totalDeaths:null}</Data>
+                    <Data>{checkForData(props.totalDeaths)}</Data>
                 </CountDetail>
             </CountrySummary>
 
