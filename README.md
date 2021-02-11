@@ -54,11 +54,7 @@ Application for informational purpose with data related to Covid-19. It is react
 * react-countup
 
 #### To-do
-* merge with portfolio
-* create footer
-* implement live api with fall back to store in case of 404
-* create rwd for app
-* fix country picker scroll bug
+* <s>merge with portfolio</s>
 * <s>deploy to Gcloud </s>
 * <s>refactor directory </s>
 * <s>fix chart bug</s>
