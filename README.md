@@ -1,5 +1,6 @@
 #### Covid-Tracker
-Application for informational purpose with data related to Covid-19. It is react application created with create-react-app and styled with styled-components.
+Application for informational purpose with data related to Covid-19. It is react application created with create-react-app and styled with styled-components.\
+[Live Demo](http://pawelsiwek.co.uk/covid)
 
 ##### Screenshot of page layout prototype.
 ![Alt text](./src/img/demo.png?raw=true "COVID-app")
