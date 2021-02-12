@@ -6,47 +6,39 @@ Application for informational purpose with data related to Covid-19. It is react
 ![Alt text](./src/img/demo.png?raw=true "COVID-app")
 ##### Directory
 ```bash
-├── gist.md
-├── jsconfig.json
-├── package.json
-├── package-lock.json
-├── public
-│   └── index.html
-├── README.md
-└── src
-    ├── api
-    │   ├── Global.js
-    │   └── UK.js
-    ├── App.jsx
-    ├── components
-    │   ├── common
-    │   │   ├── Covid.jsx
-    │   │   └── SectionHeader.jsx
-    │   ├── Footer
-    │   │   └── Footer.jsx
-    │   ├── Header
-    │   │   └── Header.jsx
-    │   ├── index.js
-    │   ├── Main
-    │   │   ├── Chart
-    │   │   │   └── Chart.jsx
-    │   │   ├── CountryPicker.jsx
-    │   │   ├── Global.jsx
-    │   │   ├── index.js
-    │   │   ├── Main.jsx
-    │   │   └── Summary.jsx
-    │   └── styled.js
-    ├── factory.js
-    ├── img
-    │   ├── covidIcon.svg
-    │   ├── covidMain.png
-    │   ├── demo.png
-    │   ├── graph.png
-    │   └── index.js
-    ├── index.js
-    └── store
-        ├── countries.json
-        └── total.json
+├── api
+│   ├── Global.js
+│   └── UK.js
+├── components
+│   ├── common
+│   │   ├── Covid.jsx
+│   │   └── SectionHeader.jsx
+│   ├── factory.js
+│   ├── Footer
+│   │   └── Footer.jsx
+│   ├── Header
+│   │   └── Header.jsx
+│   ├── index.js
+│   ├── Main
+│   │   ├── Chart.jsx
+│   │   ├── CountryPicker.jsx
+│   │   ├── Global.jsx
+│   │   ├── index.js
+│   │   ├── Main.jsx
+│   │   └── Summary.jsx
+│   └── styled.js
+├── Covid.jsx
+├── img
+│   ├── covidIcon.svg
+│   ├── covidMain.png
+│   ├── demo.png
+│   ├── graph.png
+│   └── index.js
+└── store
+    ├── countries.json
+    ├── PageFeed
+    │   └── Footer.js
+    └── total.json
 ```
 #### Packages
 * styled-components
